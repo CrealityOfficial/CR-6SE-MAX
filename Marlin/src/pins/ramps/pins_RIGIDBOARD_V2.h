@@ -1,0 +1,73 @@
+/**
+ * Marlin 3D Printer Firmware
+<<<<<<< HEAD
+ * Copyright (c) 2019 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+=======
+ * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+>>>>>>> mcu_ctrl
+ *
+ * Based on Sprinter and grbl.
+ * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+<<<<<<< HEAD
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+=======
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+>>>>>>> mcu_ctrl
+ *
+ */
+#pragma once
+
+/**
+ * RIGIDBOARD V2 Arduino Mega with RAMPS v1.4 pin assignments
+ */
+
+#define BOARD_INFO_NAME "RigidBoard V2"
+
+#include "pins_RIGIDBOARD.h"
+
+//
+// Steppers
+//
+
+// I2C based DAC like on the Printrboard REVF
+<<<<<<< HEAD
+#define DAC_STEPPER_CURRENT
+=======
+#define HAS_MOTOR_CURRENT_DAC
+>>>>>>> mcu_ctrl
+
+// Channels available for DAC, For Rigidboard there are 4
+#define DAC_STEPPER_ORDER { 0, 1, 2, 3 }
+
+#define DAC_STEPPER_SENSE    0.05   // sense resistors on rigidboard stepper chips are .05 value
+<<<<<<< HEAD
+#define DAC_STEPPER_ADDRESS  0
+#define DAC_STEPPER_MAX   4096   // was 5000 but max allowable value is actually 4096
+#define DAC_STEPPER_VREF     1   // internal Vref, gain 2x = 4.096V
+#define DAC_STEPPER_GAIN     1   // value of 1 here sets gain of 2
+#define DAC_DISABLE_PIN     42   // set low to enable DAC
+#define DAC_OR_ADDRESS    0x01
+=======
+#define DAC_STEPPER_ADDRESS                   0
+#define DAC_STEPPER_MAX                     4096  // was 5000 but max allowable value is actually 4096
+#define DAC_STEPPER_VREF                      1   // internal Vref, gain 2x = 4.096V
+#define DAC_STEPPER_GAIN                      1   // value of 1 here sets gain of 2
+#define DAC_DISABLE_PIN                      42   // set low to enable DAC
+#define DAC_OR_ADDRESS 0x01
+>>>>>>> mcu_ctrl
+
+#ifndef DAC_MOTOR_CURRENT_DEFAULT
+  #define DAC_MOTOR_CURRENT_DEFAULT { 70, 80, 90, 80 } // Default drive percent - X, Y, Z, E axis
+#endif

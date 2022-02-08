@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+<<<<<<< HEAD
+eval "echo '#define ${@}' >>Marlin/Configuration_adv.h"
+=======
+eval "echo '#define ${@}' | cat - Marlin/Configuration.h > temp && mv temp Marlin/Configuration.h"
+>>>>>>> mcu_ctrl

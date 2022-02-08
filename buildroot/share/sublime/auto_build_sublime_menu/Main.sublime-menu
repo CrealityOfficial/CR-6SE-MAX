@@ -1,0 +1,98 @@
+[
+
+    {
+        "caption": "Auto Build",
+        "children": [
+            {
+                "caption": "PIO Build",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py build"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py build"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Clean",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py clean"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py clean"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Upload",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  upload"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py upload"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Upload (traceback)",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  traceback"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py traceback"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Upload using Programmer",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  program"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py program"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Test",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  test"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py test"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Debug",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  debug"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py debug"
+>>>>>>> mcu_ctrl
+                }
+            },
+            {
+                "caption": "PIO Remote",
+                "command": "webdevshell",
+                "args": {
+<<<<<<< HEAD
+                    "command": "python buildroot/share/atom/auto_build.py  remote"
+=======
+                    "command": "python buildroot/share/vscode/auto_build.py remote"
+>>>>>>> mcu_ctrl
+                }
+            }
+        ],
+        "id": "AutoBuild",
+        "mnemonic": "A"
+    }
+]
